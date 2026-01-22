@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistance Restoration & Remodeling LLC</title>
+    <link rel="stylesheet" href="about.css"> <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="original logo.jpg" alt="RRR Logo" width="60" height="60">
+                    Home
+                </a>
+            </div>
+            <i class="fa fa-bars" id="menu-toggle"></i>
+
+            <div class="menu" id="menu">
+                <i class="fa fa-times" id="close-menu"></i>
+                <ul>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+     
+    <section class="hero-section">
+    <div class="hero-overlay">
+        <h1>About Us</h1>
+        <button type="button"><a href="#info" style="text-decoration:none; color:black;">Explore</a></button>
+    </div>
+</section>
+
+
+    <!-- Main Content -->
+    <main id="info">
+        <!-- About Section -->
+        <section class="about-section">
+            <h1>Quality You Can Trust</h1>
+            <p>
+                At Resistance Restoration & Remodeling LLC, we provide high-quality restoration and remodeling services with precision and dedication. 
+                Every project is handled with care and professionalism to ensure your property reaches its full potential.
+            </p>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="mission-section">
+            <h2>Vision Statement</h2>
+            <p>
+                To become Southwest Florida’s most trusted name in restoration and remodeling — recognized for our integrity, craftsmanship, and client-centered approach. We aim to set the standard for reliable, budget-friendly services where one call truly solves it all.
+            </p>
+        </section>
+
+        <!-- History Section -->
+        <section class="vision-section">
+            <h2>Our Story</h2>
+            <p>
+            With over a decade of hands-on experience in drywall, remodeling, and general home improvement, Resistance Restoration & Remodeling LLC has built a solid reputation for quality, reliability, and transparency. Led by a licensed Florida Gypsum Drywall contractor, our team proudly serves Fort Myers, Sanibel Island, Pine Island, and surrounding areas — turning visions into reality, one project at a time.
+            </p>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <h2>Meet the Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="team1.jpg" alt="Team Member">
+                    <h3>Jairo Teck</h3>
+                    <p>Founder & Lead Restoration Expert</p>
+                </div>
+                <div class="team-member">
+                    <img src="dany.jpg" alt="Team Member">
+                    <h3>Danyala Teck</h3>
+                    <p>Office Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+      <section class="video-section">
+  <h2 class="video-title">A Day at Resistance Restoration & Remodeling LLC</h2>
+  <p class="video-description">
+    Take a behind-the-scenes look at the daily operations of Resistance Restoration & Remodeling LLC.
+  </p>
+
+  <div class="video-container">
+    <video 
+        id="promo-video"
+        controls
+        muted
+        playsinline
+        loop
+        preload="metadata">
+        
+        <source src="rrr.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Resistance Restoration & Remodeling LLC. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Facebook SDK (once per page) -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0">
+    </script>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var menu = document.getElementById("menu");
+            var menuToggle = document.getElementById("menu-toggle");
+            var closeMenu = document.getElementById("close-menu");
+            
+            menuToggle.addEventListener("click", function() {
+                menu.style.right = "0";
+            });
+
+            closeMenu.addEventListener("click", function() {
+                menu.style.right = "-250px";
+            });
+        });
+    </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById('promo-video');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.5 }); // 50% of video must be visible
+
+    observer.observe(video);
+  });
+</script>
+
+</body>
+</html>

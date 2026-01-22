@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="original logo.jpg" alt="RRR Logo" width="60" height="60">
+                    Home
+                </a>
+            </div>
+            <i class="fa fa-bars" id="menu-toggle"></i>
+
+            <div class="menu" id="menu">
+                <i class="fa fa-times" id="close-menu"></i>
+                <ul>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+         <div class="container">
+        <div class="row">
+            <div class="col left-column">
+                <h1>G a l l e r y</h1>
+                <p>Explore our gallery.</p>
+                <button type="button"> <a href="#gallery" style="text-decoration: none;">Explore</a></button>
+            </div>
+            <div class="col right-column">
+                <div class="card-container">
+                    <div class="card-sec card-sec1">
+                        <h5>Jairo Teck</h5>
+                        <p>Florida Licensed Contractar</p>
+                    </div>
+
+                    <div class="card-sec card-sec2">
+                    </div>
+
+                    <div class="card-sec card-sec3">
+                    </div>
+
+                    <div class="card-sec card-sec4">
+                        <h5>Construction Mode</h5>
+                        <p></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Projects Section -->
+    <div class="projects" id="gallery">
+        <h2 class="projects-title">Gallery</h2>
+        <div class="projects-container">
+            <div class="card">
+                <p></p>
+                <img src="jxteck.jpg" alt="Fort Myers">
+                <div class="intro">
+                    <h1>Licenced Florida Contractor!</h1>
+                    <p></p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="bath.jpg" alt="Experts">
+                <div class="intro">
+                    <h1> Bathroom</h1>
+                    <h1> Experts!</h1>
+                    <p></p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="kitchen2.jpg" alt="Wow">
+                <div class="intro">
+                    <h1>Customer Satisfaction!!</h1>
+                    <p></p>
+                </div>
+            </div>
+            
+                <div class="card">
+                    <img src="kitchen.jpg" alt="Bathroom">
+                    <div class="intro">
+                        <h1>Renovation!</h1>
+                        <p></p>
+                    </div>
+                 </div>
+
+                 <div class="card">
+                    <img src="deck.jpg" alt="Decks">
+                    <div class="intro">
+                        <h1>Decks Galore!</h1>
+                        <p></p>
+                    </div>
+                     </div>
+
+                 <div class="card">
+                    <img src="floorbeams.jpg" alt="Decks">
+                    <div class="intro">
+                        <h1>Beams it up!</h1>
+                        <p></p>
+                    </div>
+                
+                </div>
+                
+                
+                <div class="card">
+                    <video muted loop width="420" height="340" controls>
+                        <source src="resistance video.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
+                    <div class="intro">
+                        <h1>Action@RRR</h1>
+                        <p></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <video muted loop width="420" height="340" controls>
+                        <source src="hurricane.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
+                    <div class="intro">
+                        <h1>Hurricane Adaptation!</h1>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <video muted loop width="420" height="340" controls>
+                        <source src="project.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
+                    <div class="intro">
+                        <h1>Flood Mitigation!</h1>
+                        <p></p>
+                    </div>
+                 </div>
+   
+   
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Resistance Restoration & Remodeling LLC.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        var menu = document.getElementById("menu");
+        var menuToggle = document.getElementById("menu-toggle");
+        var closeMenu = document.getElementById("close-menu");
+
+        menuToggle.addEventListener("click", function() {
+            menu.style.right = "0";
+        });
+
+        closeMenu.addEventListener("click", function() {
+            menu.style.right = "-250px";
+        });
+    </script>
+    
+    
+</body>
+</html>

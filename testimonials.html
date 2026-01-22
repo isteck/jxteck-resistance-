@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="testimonials.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo"><a href="index.html">Belmopan Veterinary Services / Crematorium</a></h1>
+            </div>
+
+            <i class="fa fa-bars" id="menu-toggle"></i> <!-- Open Menu Button -->
+
+            <div class="menu" id="menu">
+                <i class="fa fa-times" id="close-menu"></i> <!-- Close Menu Button -->
+                <ul>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                </ul>
+            </div>  
+    </header>
+
+    <!-- Video Background Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="vetservices.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+         </div>
+            <div class="content">
+                <h1>Customer Feedback</h1>
+                <div>
+                    <button type="button"><a href="#tests" style="text-decoration: none;">Explore</a></button>
+                </div>
+            </div>
+    </section>
+    <div class="title-test" id="tests">
+        <h1>Testimonials</h1>
+    </div>
+    <section class="testimonials" >
+        <div class="testimonial">
+            <img src="rev.jpg" alt="Client 1">
+            <div class="testimonial-content">
+                <div class="stars">★★★★★</div>
+                <p>"Had an emergency with one of my cats and despite needing to leave for Dangriga, Dr. Alpuche waited for us to arrive to help. While there, he answered any questions we had. I’m a very nervous animal owner so I had many. All around I’m happy we found his clinic that day. If we ever need anything, I’d go to him first."</p>
+                <h3>- Kathrine</h3>
+            </div>
+        </div>
+    
+        <div class="testimonial">
+            <img src="rev2.jpg" alt="Client 2">
+            <div class="testimonial-content">
+                <div class="stars">★★★★★</div>
+                <p>"I had to take my pup in on a Sunday. Dr. Alpuche was not only understanding, but kind and proactive, even though the day must have been inconvenient.
+                    You can expect caring and thoughtful treatment from Dr. Alpuche."</p>
+                <h3>- Ashley</h3>
+            </div>
+        </div>
+    
+        <div class="testimonial">
+            <img src="rev3.jpg" alt="Client 3">
+            <div class="testimonial-content">
+                <div class="stars">★★★★★</div>
+                <p>"Fantastic experience from start to finish. One of the very best vet in Belmopan City."</p>
+                <h3>- Sherman</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonial">
+        <img src="rev4.jpg" alt="Client 3">
+        <div class="testimonial-content">
+            <div class="stars">★★★★★</div>
+            <p>"Excellent Service."</p>
+            <h3>- River</h3>
+        </div>
+    </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Belmopan Veterinary Services / Crematorium</p>
+    </footer>
+
+  <!-- JavaScript -->
+  <script>
+    var menu = document.getElementById("menu");
+    var menuToggle = document.getElementById("menu-toggle");
+    var closeMenu = document.getElementById("close-menu");
+
+    menuToggle.addEventListener("click", function() {
+        menu.style.right = "0";
+    });
+
+    closeMenu.addEventListener("click", function() {
+        menu.style.right = "-250px";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="original logo.jpg" alt="RRR Logo" width="60" height="60">
+                    Home
+                </a>
+            </div>
+            <i class="fa fa-bars" id="menu-toggle"></i>
+            <div class="menu" id="menu">
+                <i class="fa fa-times" id="close-menu"></i>
+                <ul>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>We are here to assist you with any inquiries. Please find our contact details below or fill out the form to reach out.</p>
+        </div>
+
+        <div class="container">
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>110 4th Street, Fort Myers, Florida 33907</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>(239)601-8874</p>
+                    </div>
+                <div class="contact-form-container">
+    <div class="contact-form">
+        <h3>Send Us a Message</h3>
+
+        <form action="https://formsubmit.co/isteck@yahoo.com" method="POST">
+
+            <!-- FormSubmit settings -->
+            <input type="hidden" name="_subject" value="New Contact Message - Resistance Restoration & Remodeling LLC">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <!-- Form Fields -->
+            <input type="text" name="fullname" placeholder="Full Name" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+    </div>
+</div>
+
+         </section>
+    <section class="the-location">
+        <div class="boxlocation">
+            <h2>Our Location</h2>
+            <p>We are conveniently located in Fort Myers</p>
+            <div style="text-align: center;">
+         <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" 
+            width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+             src="https://maps.google.com/maps?width=650&amp;height=450&amp;hl=en&amp;q=110 4th St, fort myers, florida&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://nicemail.cc/">
+                </a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:450px;}.gmap_canvas {overflow:hidden;background:none!important;
+                    width:100%;height:450px;}.gmap_iframe {height:450px!important;}</style></div>
+                    </div>
+    
+       
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Resistance Restoration & Remodeling LLC. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        var menu = document.getElementById("menu");
+        var menuToggle = document.getElementById("menu-toggle");
+        var closeMenu = document.getElementById("close-menu");
+
+        menuToggle.addEventListener("click", function() {
+            menu.style.right = "0";
+        });
+
+        closeMenu.addEventListener("click", function() {
+            menu.style.right = "-250px";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistance Resoration & Remodeling LLC</title>
+    <link rel="stylesheet" href="style.css">  <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main parallax">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="original logo.jpg" alt="rrr logo" width="60" height="60"> 
+                        Resistance Restoration & Remodeling LLC
+                    </a>
+                </h1>
+            </div>
+
+            <i class="fa fa-bars" id="menu-toggle"></i> <!-- Open Menu Button -->
+
+            <div class="menu" id="menu">
+                <i class="fa fa-times" id="close-menu"></i> <!-- Close Menu Button -->
+                <ul>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div>  
+        </div>
+
+        <div class="content">
+            <h1>Resistance Restoration & Remodeling LLC</h1>
+            <p class="par">Resistance Restoration & Remodeling LLC is a Southwest Florida construction and home services company led by a licensed Florida Gypsum Drywall contractor with over 10 years of hands-on experience. Serving Fort Myers, Sanibel Island, Pine Island, and the surrounding areas, we specialize in drywall, remodeling, and a wide range of restoration services. Our mission is simple: to provide transparent, reliable, and budget-friendly solutions for homeowners and property owners alike. Whether it’s a small repair or a full-scale remodeling project, our motto stands true — “One call solves it all.”</p>
+            
+            <button class="cn">
+                <a href="contact.html">Request a Quotation for your Project</a>
+            </button>
+             <a href="https://www.facebook.com/profile.php?id=61551884046247"><p></p>
+    <img src="fab.jpg" width="100" height="100" alt="Visit Us at Facebook""></a>
+        </div>  
+       
+    </div>
+
+    <!-- Second Parallax Section -->
+    <div class="main parallax second">
+        <div class="content">
+            <h2>Our Commitment</h2>
+            <p>We pride ourselves on transparency, reliability, and quality workmanship for every project, big or small.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        var menu = document.getElementById("menu");
+        var menuToggle = document.getElementById("menu-toggle");
+        var closeMenu = document.getElementById("close-menu");
+
+        menuToggle.addEventListener("click", function() {
+            menu.style.right = "0";
+        });
+
+        closeMenu.addEventListener("click", function() {
+            menu.style.right = "-250px";
+        });
+    </script>
+
+</body>
+
+</html>

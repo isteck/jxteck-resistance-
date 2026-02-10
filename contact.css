@@ -212,7 +212,7 @@ footer {
 .contact-form h3{
     padding-bottom: 3%;
     font-size: 25px;
-    color: #28A745;
+    color: #66A3A3;;
 }
 
 .contact-form {
@@ -400,4 +400,5 @@ iframe:hover{
     iframe {
         height: 250px; 
     }
+
 }

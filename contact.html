@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
-
 <body>
 
 <header>
@@ -42,28 +41,17 @@ Home
 
 <div class="content">
 <h2>Contact Us</h2>
-
-<h3>
-<a href="mailto:jxteck@resistancerepairs.com" class="email-link">
-jxteck@resistancerepairs.com
-</a>
-</h3>
-
-<p>
-Tell us about your project and we will contact you with a quotation.
-</p>
+<p>Tell us about your project and we will contact you with a quotation.</p>
+<h3><a href="mailto:jxteck@resistancerepairs.com" class="email-link">jxteck@resistancerepairs.com</a></h3>
 </div>
-
 
 <div class="container">
 
 <!-- CONTACT INFO -->
-
 <div class="contact-info">
 
 <div class="info-box">
 <i class="fas fa-map-marker-alt"></i>
-
 <div>
 <h3>Address</h3>
 <p>110 4th Street, Fort Myers, Florida 33907</p>
@@ -72,7 +60,6 @@ Tell us about your project and we will contact you with a quotation.
 
 <div class="info-box">
 <i class="fas fa-phone-alt"></i>
-
 <div>
 <h3>Phone</h3>
 <p>(239)601-8874</p>
@@ -81,119 +68,98 @@ Tell us about your project and we will contact you with a quotation.
 
 </div>
 
-
-<!-- NEW FORM -->
+<!-- CONTACT FORM -->
 <div class="contact-form-container">
-  <form class="contact-form" action="https://formsubmit.co/jxt170@gmail.com" method="POST" enctype="multipart/form-data">
-
+<form class="contact-form" action="https://formsubmit.co/jxt170@gmail.com" method="POST" enctype="multipart/form-data">
     <!-- FormSubmit Settings -->
     <input type="hidden" name="_subject" value="New Project Quote Request - Resistance Restoration & Remodeling LLC">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_next" value="https://isteck.github.io/jxteck-resistance-/thanks.html">
 
-    <h3>Project Quote Request</h3>
-    <p>Please fill out all required fields below and we will get back to you with a quote.</p>
+    <h3>Request a Quote</h3>
 
-    <label for="full-name">Full Name *</label>
-    <input type="text" id="full-name" name="Full Name" placeholder="John Doe" required>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="Full Name" placeholder="Enter your full name" required>
 
-    <label for="email">Email Address *</label>
-    <input type="email" id="email" name="Email" placeholder="email@example.com" required>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="Email" placeholder="Enter your email" required>
 
-    <label for="phone">Phone Number *</label>
-    <input type="tel" id="phone" name="Phone Number" placeholder="(123) 456-7890" required>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="Phone Number" placeholder="Enter your phone number" required>
 
-    <label for="project-address">Project Address</label>
-    <input type="text" id="project-address" name="Project Address" placeholder="123 Main Street">
+    <label for="address">Project Address</label>
+    <input type="text" id="address" name="Project Address" placeholder="Enter project address">
 
-    <label for="project-type">Type of Project</label>
-    <select id="project-type" name="Project Type">
-      <option>Drywall Repair</option>
-      <option>Drywall Installation</option>
-      <option>Home Remodeling</option>
-      <option>Water / Damage Restoration</option>
-      <option>Interior Renovation</option>
-      <option>Exterior Repair</option>
-      <option>Other</option>
+    <label for="projecttype">Type of Project</label>
+    <select id="projecttype" name="Project Type">
+        <option>Drywall Repair</option>
+        <option>Drywall Installation</option>
+        <option>Home Remodeling</option>
+        <option>Water / Damage Restoration</option>
+        <option>Interior Renovation</option>
+        <option>Exterior Repair</option>
+        <option>Other</option>
     </select>
 
-    <label for="project-description">Project Description *</label>
-    <textarea id="project-description" name="Project Description" rows="5" placeholder="Describe your project..." required></textarea>
+    <label for="description">Project Description</label>
+    <textarea id="description" name="Project Description" rows="5" placeholder="Describe your project..." required></textarea>
 
-    <label for="estimated-budget">Estimated Budget</label>
-    <select id="estimated-budget" name="Estimated Budget">
-      <option>Under $1,000</option>
-      <option>$1,000 - $5,000</option>
-      <option>$5,000 - $10,000</option>
-      <option>$10,000+</option>
-      <option>Not Sure</option>
+    <label for="budget">Estimated Budget</label>
+    <select id="budget" name="Estimated Budget">
+        <option>Under $1,000</option>
+        <option>$1,000 - $5,000</option>
+        <option>$5,000 - $10,000</option>
+        <option>$10,000+</option>
+        <option>Not Sure</option>
     </select>
 
-    <label for="start-date">Preferred Start Date</label>
-    <input type="date" id="start-date" name="Preferred Start Date">
+    <label for="startdate">Preferred Start Date</label>
+    <input type="date" id="startdate" name="Preferred Start Date">
 
-    <label for="project-photo">Upload Reference Photo (optional)</label>
-    <input type="file" id="project-photo" name="Project Photo">
+    <label for="photo">Upload Reference Photo (optional)</label>
+    <input type="file" id="photo" name="Project Photo">
 
     <button type="submit">Submit Request</button>
-  </form>
+</form>
+</div>
+
 </div>
 </section>
-
 
 <section class="the-location">
 
 <div class="boxlocation">
 
-<h2>Our Location</h2>
-
-<p>We are conveniently located in Fort Myers</p>
+<h1>Our Location</h1>
+<p>We are conveniently located in Fort Myers.</p>
 
 <div class="mapouter">
-
 <div class="gmap_canvas">
-
-<iframe class="gmap_iframe"
-width="100%"
-frameborder="0"
-scrolling="no"
-marginheight="0"
-marginwidth="0"
-src="https://maps.google.com/maps?q=110%204th%20St,%20fort%20myers,%20florida&t=&z=17&ie=UTF8&iwloc=B&output=embed">
-</iframe>
-
+<iframe class="gmap_iframe" src="https://maps.google.com/maps?q=110%204th%20St,%20fort%20myers,%20florida&t=&z=17&ie=UTF8&iwloc=B&output=embed"></iframe>
+</div>
 </div>
 
 </div>
-
-</div>
-
 </section>
-
 
 <footer>
 <p>© 2026 Resistance Restoration & Remodeling LLC. All Rights Reserved.</p>
 </footer>
 
-
 <script>
-
 var menu = document.getElementById("menu");
 var menuToggle = document.getElementById("menu-toggle");
 var closeMenu = document.getElementById("close-menu");
 
 menuToggle.addEventListener("click", function(){
-menu.style.right = "0";
+    menu.style.right = "0";
 });
 
 closeMenu.addEventListener("click", function(){
-menu.style.right = "-250px";
+    menu.style.right = "-250px";
 });
-
 </script>
 
 </body>
 </html>
-
-

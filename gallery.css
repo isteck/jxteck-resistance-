@@ -563,3 +563,58 @@ figcaption {
     #of-slider6:target ~ .of-imgContainer { left: -50%; }
     #of-slider7:target ~ .of-imgContainer { left: -70%; }
 }
+/* IMAGE SLIDER */
+
+.slider{
+max-width:900px;
+margin:40px auto;
+position:relative;
+}
+
+.slide{
+display:none;
+text-align:center;
+}
+
+.slide img{
+width:50%;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.caption{
+background:#000;
+color:white;
+padding:12px;
+font-size:22px;
+border-radius:0 0 10px 10px;
+}
+
+/* VIDEO SECTION */
+
+.video-gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px 20px;
+}
+
+.video-card{
+width:400px;
+background:white;
+padding:10px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.video-card video{
+border-radius:8px;
+}
+
+.video-card p{
+margin-top:10px;
+font-weight:bold;
+color:#1a4385;
+}

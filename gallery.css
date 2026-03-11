@@ -273,7 +273,7 @@ button:hover {
 /* Projects Section */
 .projects-title {
     padding-top: 10%;
-    font-size: 70px;
+    font-size: 45px;
     font-weight: 300;
     color: #4a7575;
 }
@@ -577,7 +577,7 @@ text-align:center;
 }
 
 .slide img{
-width:50%;
+width:70%;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }

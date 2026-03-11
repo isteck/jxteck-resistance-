@@ -84,14 +84,13 @@ Tell us about your project and we will contact you with a quotation.
 
 <!-- NEW FORM -->
 
-<div class="contact-form-container">
+<form action="https://formsubmit.co/jxt170@gmail.com" method="POST" enctype="multipart/form-data">
 
-<div class="form-container">
-
-<h2>Request a Project Quote</h2>
-<p>Tell us about your project and we will contact you with a quotation.</p>
-
-<form action="mailto:jxteck@resistancerepairs.com" method="POST" enctype="text/plain">
+<!-- FormSubmit Settings -->
+<input type="hidden" name="_subject" value="New Project Quote Request - Resistance Restoration & Remodeling LLC">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://isteck.github.io/jxteck-resistance-/thanks.html">
 
 <label>Full Name</label>
 <input type="text" name="Full Name" required>
@@ -100,7 +99,7 @@ Tell us about your project and we will contact you with a quotation.
 <input type="email" name="Email" required>
 
 <label>Phone Number</label>
-<input type="tel" name="Phone">
+<input type="tel" name="Phone Number" required>
 
 <label>Project Address</label>
 <input type="text" name="Project Address">
@@ -117,10 +116,10 @@ Tell us about your project and we will contact you with a quotation.
 </select>
 
 <label>Project Description</label>
-<textarea name="Project Description" rows="5" placeholder="Describe your project..."></textarea>
+<textarea name="Project Description" rows="5" placeholder="Describe your project..." required></textarea>
 
 <label>Estimated Budget</label>
-<select name="Budget">
+<select name="Estimated Budget">
 <option>Under $1,000</option>
 <option>$1,000 - $5,000</option>
 <option>$5,000 - $10,000</option>
@@ -129,7 +128,7 @@ Tell us about your project and we will contact you with a quotation.
 </select>
 
 <label>Preferred Start Date</label>
-<input type="date" name="Start Date">
+<input type="date" name="Preferred Start Date">
 
 <label>Upload Reference Photo (optional)</label>
 <input type="file" name="Project Photo">
@@ -200,3 +199,4 @@ menu.style.right = "-250px";
 
 </body>
 </html>
+

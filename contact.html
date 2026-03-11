@@ -83,66 +83,62 @@ Tell us about your project and we will contact you with a quotation.
 
 
 <!-- NEW FORM -->
+<div class="contact-form-container">
+  <form class="contact-form" action="https://formsubmit.co/jxt170@gmail.com" method="POST" enctype="multipart/form-data">
 
-<form action="https://formsubmit.co/jxt170@gmail.com" method="POST" enctype="multipart/form-data">
+    <!-- FormSubmit Settings -->
+    <input type="hidden" name="_subject" value="New Project Quote Request - Resistance Restoration & Remodeling LLC">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://isteck.github.io/jxteck-resistance-/thanks.html">
 
-<!-- FormSubmit Settings -->
-<input type="hidden" name="_subject" value="New Project Quote Request - Resistance Restoration & Remodeling LLC">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://isteck.github.io/jxteck-resistance-/thanks.html">
+    <h3>Project Quote Request</h3>
+    <p>Please fill out all required fields below and we will get back to you with a quote.</p>
 
-<label>Full Name</label>
-<input type="text" name="Full Name" required>
+    <label for="full-name">Full Name *</label>
+    <input type="text" id="full-name" name="Full Name" placeholder="John Doe" required>
 
-<label>Email Address</label>
-<input type="email" name="Email" required>
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="Email" placeholder="email@example.com" required>
 
-<label>Phone Number</label>
-<input type="tel" name="Phone Number" required>
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="Phone Number" placeholder="(123) 456-7890" required>
 
-<label>Project Address</label>
-<input type="text" name="Project Address">
+    <label for="project-address">Project Address</label>
+    <input type="text" id="project-address" name="Project Address" placeholder="123 Main Street">
 
-<label>Type of Project</label>
-<select name="Project Type">
-<option>Drywall Repair</option>
-<option>Drywall Installation</option>
-<option>Home Remodeling</option>
-<option>Water / Damage Restoration</option>
-<option>Interior Renovation</option>
-<option>Exterior Repair</option>
-<option>Other</option>
-</select>
+    <label for="project-type">Type of Project</label>
+    <select id="project-type" name="Project Type">
+      <option>Drywall Repair</option>
+      <option>Drywall Installation</option>
+      <option>Home Remodeling</option>
+      <option>Water / Damage Restoration</option>
+      <option>Interior Renovation</option>
+      <option>Exterior Repair</option>
+      <option>Other</option>
+    </select>
 
-<label>Project Description</label>
-<textarea name="Project Description" rows="5" placeholder="Describe your project..." required></textarea>
+    <label for="project-description">Project Description *</label>
+    <textarea id="project-description" name="Project Description" rows="5" placeholder="Describe your project..." required></textarea>
 
-<label>Estimated Budget</label>
-<select name="Estimated Budget">
-<option>Under $1,000</option>
-<option>$1,000 - $5,000</option>
-<option>$5,000 - $10,000</option>
-<option>$10,000+</option>
-<option>Not Sure</option>
-</select>
+    <label for="estimated-budget">Estimated Budget</label>
+    <select id="estimated-budget" name="Estimated Budget">
+      <option>Under $1,000</option>
+      <option>$1,000 - $5,000</option>
+      <option>$5,000 - $10,000</option>
+      <option>$10,000+</option>
+      <option>Not Sure</option>
+    </select>
 
-<label>Preferred Start Date</label>
-<input type="date" name="Preferred Start Date">
+    <label for="start-date">Preferred Start Date</label>
+    <input type="date" id="start-date" name="Preferred Start Date">
 
-<label>Upload Reference Photo (optional)</label>
-<input type="file" name="Project Photo">
+    <label for="project-photo">Upload Reference Photo (optional)</label>
+    <input type="file" id="project-photo" name="Project Photo">
 
-<button type="submit">Submit Request</button>
-
-</form>
-
+    <button type="submit">Submit Request</button>
+  </form>
 </div>
-
-</div>
-
-</div>
-
 </section>
 
 
@@ -199,4 +195,5 @@ menu.style.right = "-250px";
 
 </body>
 </html>
+
 

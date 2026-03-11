@@ -1,122 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="original logo.jpg" alt="RRR Logo" width="60" height="60">
-                    Home
-                </a>
-            </div>
-            <i class="fa fa-bars" id="menu-toggle"></i>
-            <div class="menu" id="menu">
-                <i class="fa fa-times" id="close-menu"></i>
-                <ul>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <section class="contact">
-        <div class="content">
-            <h2>Contact Us:</h2>
-            <h3><a href="mailto:jxteck@resistancerepairs.com" class="email-link">jxteck@resistancerepairs.com</a></h3>
-            <p>We are here to assist you with any inquiries. Please find our contact details below or fill out the form to reach out.</p>
-        </div>
+<header>
+<nav class="navbar">
 
-        <div class="container">
-            <div class="contact-info">
-                <div class="info-box">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h3>Address</h3>
-                        <p>110 4th Street, Fort Myers, Florida 33907</p>
-                    </div>
-                </div>
-                <div class="info-box">
-                    <i class="fas fa-phone-alt"></i>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>(239)601-8874</p>
-                    </div>
-                </div>
-            </div>
+<div class="logo">
+<a href="index.html">
+<img src="original logo.jpg" alt="RRR Logo" width="60" height="60">
+Home
+</a>
+</div>
 
-            <div class="contact-form-container">
-                <div class="contact-form">
-                    <h3>Send Us a Message</h3>
-                    <form action="https://formsubmit.co/jxt170@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="New Contact Message - Resistance Restoration & Remodeling LLC">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
+<i class="fa fa-bars" id="menu-toggle"></i>
 
-                        <input type="hidden" name="_next" value="https://isteck.github.io/jxteck-resistance-/thanks.html">
-                        
-                        <input type="text" name="fullname" placeholder="Full Name" required>
-                        <input type="email" name="email" placeholder="Email Address" required>
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
+<div class="menu" id="menu">
+<i class="fa fa-times" id="close-menu"></i>
 
-                <div class="ai-generator-link" style="margin-top: 20px; text-align: center;">
-                    <a href="https://typli.ai/ai-estimate-generator" target="_blank">
-                        <img src="estimateai.jpg" width="450" height="350" alt="AI-estimate-generator" style="max-width: 100%; height: auto;">
-                    </a>
-                </div>
-            </div> 
-        </div>
-    </section>
+<ul>
+<li><a href="about.html">ABOUT US</a></li>
+<li><a href="services.html">SERVICES</a></li>
+<li><a href="contact.html">CONTACT US</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+</ul>
 
-    <section class="the-location">
-        <div class="boxlocation">
-            <h2>Our Location</h2>
-            <p>We are conveniently located in Fort Myers</p>
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?q=110%204th%20St,%20fort%20myers,%20florida&t=&z=17&ie=UTF8&iwloc=B&output=embed">
-                    </iframe>
-                </div>
-                <style>
-                    .mapouter{position:relative;text-align:right;width:100%;height:450px;}
-                    .gmap_canvas {overflow:hidden;background:none!important;width:100%;height:450px;}
-                    .gmap_iframe {height:450px!important;}
-                </style>
-            </div>
-        </div>
-    </section>
+</div>
+</nav>
+</header>
 
-    <footer>
-        <p>© 2026 Resistance Restoration & Remodeling LLC. All Rights Reserved.</p>
-    </footer>
+<section class="contact">
 
-    <script>
-        var menu = document.getElementById("menu");
-        var menuToggle = document.getElementById("menu-toggle");
-        var closeMenu = document.getElementById("close-menu");
+<div class="content">
+<h2>Contact Us</h2>
 
-        menuToggle.addEventListener("click", function() {
-            menu.style.right = "0";
-        });
+<h3>
+<a href="mailto:jxteck@resistancerepairs.com" class="email-link">
+jxteck@resistancerepairs.com
+</a>
+</h3>
 
-        closeMenu.addEventListener("click", function() {
-            menu.style.right = "-250px";
-        });
-    </script>
+<p>
+Tell us about your project and we will contact you with a quotation.
+</p>
+</div>
+
+
+<div class="container">
+
+<!-- CONTACT INFO -->
+
+<div class="contact-info">
+
+<div class="info-box">
+<i class="fas fa-map-marker-alt"></i>
+
+<div>
+<h3>Address</h3>
+<p>110 4th Street, Fort Myers, Florida 33907</p>
+</div>
+</div>
+
+<div class="info-box">
+<i class="fas fa-phone-alt"></i>
+
+<div>
+<h3>Phone</h3>
+<p>(239)601-8874</p>
+</div>
+</div>
+
+</div>
+
+
+<!-- NEW FORM -->
+
+<div class="contact-form-container">
+
+<div class="form-container">
+
+<h2>Request a Project Quote</h2>
+<p>Tell us about your project and we will contact you with a quotation.</p>
+
+<form action="mailto:jxteck@resistancerepairs.com" method="POST" enctype="text/plain">
+
+<label>Full Name</label>
+<input type="text" name="Full Name" required>
+
+<label>Email Address</label>
+<input type="email" name="Email" required>
+
+<label>Phone Number</label>
+<input type="tel" name="Phone">
+
+<label>Project Address</label>
+<input type="text" name="Project Address">
+
+<label>Type of Project</label>
+<select name="Project Type">
+<option>Drywall Repair</option>
+<option>Drywall Installation</option>
+<option>Home Remodeling</option>
+<option>Water / Damage Restoration</option>
+<option>Interior Renovation</option>
+<option>Exterior Repair</option>
+<option>Other</option>
+</select>
+
+<label>Project Description</label>
+<textarea name="Project Description" rows="5" placeholder="Describe your project..."></textarea>
+
+<label>Estimated Budget</label>
+<select name="Budget">
+<option>Under $1,000</option>
+<option>$1,000 - $5,000</option>
+<option>$5,000 - $10,000</option>
+<option>$10,000+</option>
+<option>Not Sure</option>
+</select>
+
+<label>Preferred Start Date</label>
+<input type="date" name="Start Date">
+
+<label>Upload Reference Photo (optional)</label>
+<input type="file" name="Project Photo">
+
+<button type="submit">Submit Request</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="the-location">
+
+<div class="boxlocation">
+
+<h2>Our Location</h2>
+
+<p>We are conveniently located in Fort Myers</p>
+
+<div class="mapouter">
+
+<div class="gmap_canvas">
+
+<iframe class="gmap_iframe"
+width="100%"
+frameborder="0"
+scrolling="no"
+marginheight="0"
+marginwidth="0"
+src="https://maps.google.com/maps?q=110%204th%20St,%20fort%20myers,%20florida&t=&z=17&ie=UTF8&iwloc=B&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>© 2026 Resistance Restoration & Remodeling LLC. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+
+var menu = document.getElementById("menu");
+var menuToggle = document.getElementById("menu-toggle");
+var closeMenu = document.getElementById("close-menu");
+
+menuToggle.addEventListener("click", function(){
+menu.style.right = "0";
+});
+
+closeMenu.addEventListener("click", function(){
+menu.style.right = "-250px";
+});
+
+</script>
+
 </body>
 </html>
-
-

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
 
     <header>
@@ -58,105 +59,94 @@
         </div>
     </section>
 
-    <main class="projects" id="gallery">
-        <h2 class="projects-title">Gallery</h2>
-        
-        <div class="projects-container">
-            <div class="card">
-                <img src="jxtusa2.jpg" alt="Fort Myers Contractor">
-                <div class="intro">
-                    <h1>Licensed Florida Contractor!</h1>
-                </div>
-            </div>
+  <main class="projects" id="gallery">
 
-            <div class="card">
-                <img src="bath.jpg" alt="Bathroom Experts">
-                <div class="intro">
-                    <h1>Bathroom Experts!</h1>
-                </div>
-            </div>
+<h2 class="projects-title">Project Gallery</h2>
 
-            <div class="card">
-                <img src="kitchen2.jpg" alt="Kitchen Satisfaction">
-                <div class="intro">
-                    <h1>Customer Satisfaction!!</h1>
-                </div>
-            </div>
+<!-- IMAGE SLIDER -->
+<div class="slider">
 
-            <div class="card">
-                <img src="kitchen.jpg" alt="Renovation">
-                <div class="intro">
-                    <h1>Renovation!</h1>
-                </div>
-            </div>
+<div class="slides">
 
-            <div class="card">
-                <img src="deck.jpg" alt="Decks Galore">
-                <div class="intro">
-                    <h1>Decks Galore!</h1>
-                </div>
-            </div>
+<div class="slide">
+<img src="jxtusa2.jpg">
+<div class="caption">Licensed Florida Contractor!</div>
+</div>
 
-            <div class="card">
-                <img src="floorbeams.jpg" alt="Floor Beams">
-                <div class="intro">
-                    <h1>Beams it up!</h1>
-                </div>
-            </div>
+<div class="slide">
+<img src="bath.jpg">
+<div class="caption">Bathroom Experts!</div>
+</div>
 
-            <div class="card">
-                <video muted loop controls width="100%">
-                    <source src="vidonecall.mp4" type="video/mp4">
-                </video>
-                <div class="intro">
-                    <h1>We are Resistance!</h1>
-                </div>
-            </div>
+<div class="slide">
+<img src="kitchen2.jpg">
+<div class="caption">Customer Satisfaction!</div>
+</div>
 
-            <div class="card fb-card">
-                <div class="fb-video" 
-                     data-href="https://www.facebook.com/61551884046247/videos/1199279365695621/" 
-                     data-width="300" 
-                     data-allowfullscreen="true">
-                </div>
-            </div>
+<div class="slide">
+<img src="kitchen.jpg">
+<div class="caption">Renovation!</div>
+</div>
 
-            <div class="card">
-                <video muted loop controls width="100%">
-                    <source src="resistance video.mp4" type="video/mp4">
-                </video>
-                <div class="intro">
-                    <h1>Action @ RRR</h1>
-                </div>
-            </div>
+<div class="slide">
+<img src="deck.jpg">
+<div class="caption">Decks Galore!</div>
+</div>
 
-            <div class="card">
-                <video muted loop controls width="100%">
-                    <source src="hurricane.mp4" type="video/mp4">
-                </video>
-                <div class="intro">
-                    <h1>Hurricane Adaptation!</h1>
-                </div>
-            </div>
+<div class="slide">
+<img src="floorbeams.jpg">
+<div class="caption">Beams it Up!</div>
+</div>
 
-            <div class="card">
-                <video muted loop controls width="100%">
-                    <source src="project.mp4" type="video/mp4">
-                </video>
-                <div class="intro">
-                    <h1>Flood Mitigation!</h1>
-                </div>
-            </div>
+</div>
 
-            <div class="card">
-                <video muted loop controls width="100%">
-                    <source src="bathroom experts.mp4" type="video/mp4">
-                </video>
-                <div class="intro">
-                    <h1>Bathrooms!</h1>
-                </div>
-            </div>
-        </div> </main>
+</div>
+
+
+<!-- VIDEO SECTION -->
+
+<h2 class="projects-title">Project Videos</h2>
+
+<div class="video-gallery">
+
+<div class="video-card">
+<video controls width="100%">
+<source src="vidonecall.mp4" type="video/mp4">
+</video>
+<p>We are Resistance!</p>
+</div>
+
+<div class="video-card">
+<video controls width="100%">
+<source src="resistance video.mp4" type="video/mp4">
+</video>
+<p>Action @ RRR</p>
+</div>
+
+<div class="video-card">
+<video controls width="100%">
+<source src="hurricane.mp4" type="video/mp4">
+</video>
+<p>Hurricane Adaptation</p>
+</div>
+
+<div class="video-card">
+<video controls width="100%">
+<source src="project.mp4" type="video/mp4">
+</video>
+<p>Flood Mitigation</p>
+</div>
+
+<div class="video-card">
+<video controls width="100%">
+<source src="bathroom experts.mp4" type="video/mp4">
+</video>
+<p>Bathroom Experts</p>
+</div>
+
+</div>
+
+</main>
 
     <footer>
         <p>&copy; 2026 Resistance Restoration & Remodeling LLC.</p>
@@ -178,5 +168,31 @@
             menu.style.right = "-250px";
         });
     </script>
+    <script>
+
+let slideIndex = 0;
+
+function showSlides(){
+
+const slides = document.querySelectorAll(".slide");
+
+slides.forEach(slide => {
+slide.style.display = "none";
+});
+
+slideIndex++;
+
+if(slideIndex > slides.length){
+slideIndex = 1;
+}
+
+slides[slideIndex-1].style.display = "block";
+
+setTimeout(showSlides, 3000); // 3 seconds
+}
+
+showSlides();
+
+</script>
 </body>
 </html>

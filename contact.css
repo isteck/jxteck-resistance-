@@ -1,202 +1,462 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us</title>
-
-<link rel="stylesheet" href="contact.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-</head>
-
-<body>
-
-<header>
-<nav class="navbar">
-
-<div class="logo">
-<a href="index.html">
-<img src="original logo.jpg" alt="RRR Logo" width="60" height="60">
-Home
-</a>
-</div>
-
-<i class="fa fa-bars" id="menu-toggle"></i>
-
-<div class="menu" id="menu">
-<i class="fa fa-times" id="close-menu"></i>
-
-<ul>
-<li><a href="about.html">ABOUT US</a></li>
-<li><a href="services.html">SERVICES</a></li>
-<li><a href="contact.html">CONTACT US</a></li>
-<li><a href="gallery.html">GALLERY</a></li>
-</ul>
-
-</div>
-</nav>
-</header>
-
-<section class="contact">
-
-<div class="content">
-<h2>Contact Us</h2>
-
-<h3>
-<a href="mailto:jxteck@resistancerepairs.com" class="email-link">
-jxteck@resistancerepairs.com
-</a>
-</h3>
-
-<p>
-Tell us about your project and we will contact you with a quotation.
-</p>
-</div>
-
-
-<div class="container">
-
-<!-- CONTACT INFO -->
-
-<div class="contact-info">
-
-<div class="info-box">
-<i class="fas fa-map-marker-alt"></i>
-
-<div>
-<h3>Address</h3>
-<p>110 4th Street, Fort Myers, Florida 33907</p>
-</div>
-</div>
-
-<div class="info-box">
-<i class="fas fa-phone-alt"></i>
-
-<div>
-<h3>Phone</h3>
-<p>(239)601-8874</p>
-</div>
-</div>
-
-</div>
-
-
-<!-- NEW FORM -->
-
-<div class="contact-form-container">
-
-<div class="form-container">
-
-<h2>Request a Project Quote</h2>
-<p>Tell us about your project and we will contact you with a quotation.</p>
-
-<form action="mailto:jxteck@resistancerepairs.com" method="POST" enctype="text/plain">
-
-<label>Full Name</label>
-<input type="text" name="Full Name" required>
-
-<label>Email Address</label>
-<input type="email" name="Email" required>
-
-<label>Phone Number</label>
-<input type="tel" name="Phone">
-
-<label>Project Address</label>
-<input type="text" name="Project Address">
-
-<label>Type of Project</label>
-<select name="Project Type">
-<option>Drywall Repair</option>
-<option>Drywall Installation</option>
-<option>Home Remodeling</option>
-<option>Water / Damage Restoration</option>
-<option>Interior Renovation</option>
-<option>Exterior Repair</option>
-<option>Other</option>
-</select>
-
-<label>Project Description</label>
-<textarea name="Project Description" rows="5" placeholder="Describe your project..."></textarea>
-
-<label>Estimated Budget</label>
-<select name="Budget">
-<option>Under $1,000</option>
-<option>$1,000 - $5,000</option>
-<option>$5,000 - $10,000</option>
-<option>$10,000+</option>
-<option>Not Sure</option>
-</select>
-
-<label>Preferred Start Date</label>
-<input type="date" name="Start Date">
-
-<label>Upload Reference Photo (optional)</label>
-<input type="file" name="Project Photo">
-
-<button type="submit">Submit Request</button>
-
-</form>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section class="the-location">
-
-<div class="boxlocation">
-
-<h2>Our Location</h2>
-
-<p>We are conveniently located in Fort Myers</p>
-
-<div class="mapouter">
-
-<div class="gmap_canvas">
-
-<iframe class="gmap_iframe"
-width="100%"
-frameborder="0"
-scrolling="no"
-marginheight="0"
-marginwidth="0"
-src="https://maps.google.com/maps?q=110%204th%20St,%20fort%20myers,%20florida&t=&z=17&ie=UTF8&iwloc=B&output=embed">
-</iframe>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<footer>
-<p>© 2026 Resistance Restoration & Remodeling LLC. All Rights Reserved.</p>
-</footer>
-
-
-<script>
-
-var menu = document.getElementById("menu");
-var menuToggle = document.getElementById("menu-toggle");
-var closeMenu = document.getElementById("close-menu");
-
-menuToggle.addEventListener("click", function(){
-menu.style.right = "0";
-});
-
-closeMenu.addEventListener("click", function(){
-menu.style.right = "-250px";
-});
-
-</script>
-
-</body>
-</html>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+html, body {
+    
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Times New Roman';
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: #0077CC;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo a img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.logo a:hover {
+    color: #66A3A3;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: #66A3A3;
+}
+
+/* Mobile Menu */
+#menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#close-menu {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background: #2c4e4e;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        transition: right 0.5s ease-in-out;
+        z-index: 1000;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu ul li a {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    #close-menu {
+        display: block;
+    }
+ 
+
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: flex;
+    width: 100%;
+    bottom: 0;
+}
+/* Contact section */
+.contact {
+    padding: 80px 5% 100px;
+    background-color: #66A3A3;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    flex-direction: column;
+}
+
+.contact .content h2 {
+    font-size: 42px; 
+    margin-bottom: 20px;
+    color: #0077CC;
+}
+
+.contact .content p {
+    font-size: 20px; 
+    color: #ccc;
+}
+
+/* Flex layout for contact info and form */
+.container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 40px;
+    align-items: flex-start; 
+    margin-top: 40px;
+}
+
+/* Contact info styling */
+.contact {
+    padding: 80px 5% 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.95)), 
+                url('contact-background.jpg') no-repeat center center/cover;
+    margin-top: 60px;
+    text-align: center;
+}
+.contact-info {
+    padding-top:7%;
+    flex: 1;
+    text-align: left; 
+    color: #ffffff;
+    padding-left: 0px;
+
+}
+
+.contact-info .info-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 27px;
+}
+
+.contact-info h3, .contact-info p {
+    font-size: 20px; 
+}
+
+.contact-info i {
+    font-size: 30px;
+    color: #0077CC;
+}
+
+/* Contact form container adjustments */
+.contact-form-container {
+    max-width: 500px; 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.contact-form h3{
+    padding-bottom: 3%;
+    font-size: 25px;
+    color: #66A3A3;;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 34px; 
+    background: rgba(38, 38, 38, 0.728);
+    border-radius: 10px;
+    max-width: 500px; 
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 9px;
+    font-size: 14px;
+    background: #0077CC; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #758c8c; 
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        gap: 20px; 
+        object-position: center;
+    }
+
+
+    /* Center the contact info */
+    .contact-info {
+        text-align: center; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        padding-top: 0; 
+        padding-left: 16%;
+        gap: 50px;
+        padding-top: 4%;
+        padding-bottom: 7%;
+    }
+
+    /* Style for each info box (address, phone, email) */
+    .contact-info .info-box {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 20px; 
+    }
+
+    .contact-form-container {
+        max-width: 100%; 
+        margin: 0; 
+    }
+
+    .contact-form {
+        padding: 20px; 
+    }
+
+    .contact-form h3 {
+        font-size: 22px; 
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contact .content h2 {
+        font-size: 28px; 
+    }
+
+    .contact .content p {
+        font-size: 16px; 
+    }
+
+    .contact-info h3,
+    .contact-info p {
+        font-size: 18px; 
+    }
+
+    .contact-form h3 {
+        font-size: 20px; 
+    }
+}
+
+
+
+
+/* location section */
+ body .the-location{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 12,12);
+}
+
+.the-location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    color: white;
+}
+
+.boxlocation{
+    max-width: 600px;
+}
+.boxlocation h1{
+    font-size: 5em;
+    text-align: center;
+}
+
+.boxlocation p{
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 30px;
+}
+iframe{
+    border-radius: 2em;
+    border: none;
+    width: 500px;
+    height: 500px;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+iframe:hover{
+    transform: scale(1.05);
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .the-location {
+        flex-direction: column; 
+        gap: 2em; 
+    }
+
+    .boxlocation {
+        max-width: 90%; 
+    }
+
+    .boxlocation h1 {
+        font-size: 3em; 
+    }
+
+    .boxlocation p {
+        font-size: 1em; 
+    }
+
+    iframe {
+        width: 90%;
+        height: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .boxlocation h1 {
+        font-size: 2.5em; 
+    }
+
+    .boxlocation p {
+        font-size: 0.9em;
+    }
+
+    iframe {
+        height: 250px; 
+    }
+
+}
+/* NEW PROJECT QUOTE FORM */
+
+.form-container{
+width:100%;
+max-width:600px;
+margin:0 auto;
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2{
+text-align:center;
+margin-bottom:10px;
+color:#1e73be;
+}
+
+.form-container p{
+text-align:center;
+color:#666;
+margin-bottom:20px;
+}
+
+.form-container label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+color:#333;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:5px;
+box-sizing:border-box;
+font-size:15px;
+}
+
+.form-container button{
+margin-top:20px;
+width:100%;
+background:#1e73be;
+color:white;
+border:none;
+padding:12px;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.form-container button:hover{
+background:#155a96;
+}
